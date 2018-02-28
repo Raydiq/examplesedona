@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дарья Бабусько](https://up.htmlacademy.ru/htmlcss/20/user/594015).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Тарасов](https://htmlacademy.ru/profile/tarasoff).
 
 ---
 
