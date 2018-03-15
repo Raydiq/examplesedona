@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+     <link href="css/style.css" rel="stylesheet">
+    
   </head>
   <body>
     <header>
-      <nav class="main-header">
-        <a class="main-header-logo" href="index.html">
+      <nav class="main-navigation">
+        <a class="main-logo" href="index.html">
         <img src="img/main-header138x70.png" width="138" height="70" alt="Логотип Седона">   
         </a>  
         <ul class="site-navigation">
@@ -21,13 +25,13 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">SEDONA</h1>
-      <section class="features">
+      <section class="features-main">
         <h2 class="visually-hidden">
           Преимущества
         </h2>
         <p class="sedona-description">
           Седона - небольшой городок в Аризоне,<br>
-          заслуживающий большего
+          заслуживающий большего!
         </p>
         <p class="table-name">Рассмотри 5 причин, по которым Седона круче, чем Гранд Каньон
         </p>
@@ -37,21 +41,21 @@
               городок
             </h3>
             <span> №1</span>
-            <p>Седона - не аттрауцион для туристов, там течёт своя жизнь</p>
-            <ul>
+            <p>Седона - не аттракцион для туристов,<br> там течёт своя жизнь</p>
+            <ul class="features-list">
               <li class="features-item">
-                <h3 class="advantages-item-header">Жильё</h3>
-                <p class="advantages-item-description">Рекомендуем пожить в настоящем отеле, как в кино</p>
+                <h3>Жильё</h3>
+                <p>Рекомендуем пожить в настоящем отеле, как в кино</p>
               </li>
               <li class="features-item">
-                <h3 class="advantages-item-header">Еда</h3>
-                <p class="advantages-item-description">Всегда заказывайте фирменный бургер.
+                <h3>Еда</h3>
+                <p>Всегда заказывайте фирменный бургер.
                   Вы не разочаруетесь!
                 </p>
               </li>
               <li class="features-item">
-                <h3 class="advantages-item-header">Сувениры</h3>
-                <p class="advantages-item-description">Не только китайского производства, но и местного</p>
+                <h3>Сувениры</h3>
+                <p>Не только китайского производства, но и местного</p>
               </li>
             </ul>
           </li>
@@ -60,17 +64,17 @@
               мост дьявола
             </h3>
             <span> №2</span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
           </li>
           <li class="features">
-            <h3 class="advantages-item-header">Небольшая площадь</h3>
-            <span class="advantages-item-span">№3</span>
-            <p class="advantages-item-description">Все достопримечательности находятся очень близко</p>
+            <h3>Небольшая площадь</h3>
+            <span>№3</span>
+            <p >Все достопримечательности находятся очень близко</p>
           </li>
           <li class="features">
-            <h3 class="advantages-item-header">Красивая дорога</h3>
-            <span class="advantages-item-span">№4</span>
-            <p class="advantages-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h3>Красивая дорога</h3>
+            <span>№4</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="features">
             <h3 >Мало туристов</h3>
@@ -96,8 +100,8 @@
             twitter
             </a>
           </li>
-          <li><a class="social-button" href="facebook.html">
-            #
+          <li><a class="social-button" href="#">
+            facebook
             </a>
           </li>
           <li><a class="social-button" href="#">
@@ -107,7 +111,7 @@
         </ul>
       </div>
       <p class="footer-copyright">
-        <b>Website by</b> 
+        <p>Website by</p> 
         <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>
@@ -115,14 +119,14 @@
       <header>
         <h2 class="search-hotel">Поиск гостинец в Седоне</h2>
       </header>
-      <form>
+      <form class="searching-form">
         <p>
           <label class="date-comming" for="dateid">
           Дата заезда:
           </label>
           <input type="text" name="date" id="dateid" value="24 апреля 2017">
         </p>
-        <p>
+        <p >
           <label class="date-commingout" for="dateoutid">
           Дата выезда:
           </label>

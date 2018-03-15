@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header>
-      <nav class="main-header">
+      <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
         <img src="img/main-header138x70.png" width="138" height="70" alt="Логотип Седона">   
         </a>	
         <ul class="site-navigation">
-          <li><a href="#">Информаци</a></li>
+          <li class="site-navigation-current"><a href="#">Информаци</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="hotel.jpg">Гостиницы</a></li>
+          <li><a href="hotel.jpg">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -23,8 +26,10 @@
         <h2 class="visually-hidden">Фильтр жилья</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="infrastructure">
-            <legend class="infrastructure-name">Инфаструктура:</legend>
-            <ul>
+            <legend>
+               Инфаструктура:
+             </legend>
+            <ul class="infrastructure-filter">
               <li>
                 <input class="infrastructure-item" type="checkbox" name="pool" id="poolid" checked>
                 <label class="infrastructure-description" for="poolid">
@@ -46,10 +51,10 @@
             </ul>
           </fieldset>
           <fieldset class="type-of-housing">
-            <legend class="type-of-housing-name">
+            <legend>
               Тип Жилья:
             </legend>
-            <ul>
+            <ul class="housing-filter">
               <li>
                 <input class="type-of-housing-item" type="checkbox" name="hotel" id="hotelid">
                 <label class="type-of-housing-description" for="hotelid">
@@ -74,18 +79,18 @@
           </button>
         </form>
       </section>
-      <p>Найдено:3</p>
+      <p class="done">Найдено:3</p>
       <div id="catalog-sorter" class="sort">
         <span class="sorter">Сортировка:</span>
-        <ul>
+        <ul class="sorting">
           <li class="sort-item">
-            По цене
+            <a href="#">По цене</a>
           </li>
           <li class="sort-item">
-            По типу
+            <a href="#">По типу</a>
           </li>
           <li class="sort-item">
-            По рейтингу
+            <a href="#">По рейтингу</a>
           </li>
         </ul>
       </div>
@@ -102,8 +107,8 @@
               </a>
             </p>
             <p><span class="item-description">Гостиница</span> <span class="item-description">от 4000 р.</span></p>
-            <a class="button" href="#">Подробнее</a>
-            <a class="rent" href="#">Забронировать</a>
+            <div class="more-information"><a class="button" href="#">Подробнее</a><div>
+            <div class="rent-button"><a class="rent" href="#">Забронировать</a></div>
           </li>
           <li class="catalog-item">
             <h3>
@@ -118,8 +123,8 @@
             	<span class="item-description">Мотель</span> 
             	<span class="item-description">от 3000 р.</span>
             </p>
-            <a class="button" href="#">Подробнее</a>
-            <a class="rent" href="#">Забронировать</a>
+            <div class="more-information"><a class="button" href="#">Подробнее</a></div>
+            <div class="rent-button"><a class="rent" href="#">Забронировать</a><div>
           </li>
           <li class="catalog-item">
             <h3>
@@ -130,9 +135,10 @@
               <img src="img/villas135x90.jpg" width="135" height="90" alt="Villas at poco diablo">
               </a>
             </p>
-            <p><span class="item-description">Апартаменты</span> <span class="item-description">от 2000 р.</span></p>
-            <a class="button" href="#">Подробнее</a>
-            <a class="rent" href="#">Забронировать</a>
+            <p><span class="item-description">Апартаменты</span> 
+            <span class="item-description">от 2000 р.</span></p>
+            <div class="more-information"><a class="button" href="#">Подробнее</a></div>
+            <div class="rent-button"><a class="rent" href="#">Забронировать</a></div>
           </li>
         </ul>
       </section>
