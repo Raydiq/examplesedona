@@ -49,6 +49,11 @@ a {
     color: #cacaca;
 }
 
+header{
+	background-image: url(../img/header1200x568.jpg);
+	background-size: 100%;
+}
+
 .sedona-features,
 .features-list{
 	list-style: none;
@@ -130,9 +135,21 @@ a {
 .searching-form input{
     font: inherit;
     background-color: #f2f2f2;
-  
+    border: 0px;
 }
 
+input[type="text"]{
+	line-height: 26px;
+}
+
+.search-hotel{
+	font-size: : 21px;
+	line-height: 26px;
+	color: #ffffff;
+	text-align: center;
+	background-color: #766357;
+	border:0px;
+}
 .inner-page {
     color: #000000;
     background-color: #ffffff;
