@@ -3,21 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="normalize.css">
-     <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner-page">
     <header>
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
         <img src="img/main-header138x70.png" width="138" height="70" alt="Логотип Седона">   
-        </a>	
+        </a>  
         <ul class="site-navigation">
           <li class="site-navigation-current"><a href="#">Информаци</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="hotel.jpg">Гостиницы</a></li>
+          <li><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -27,8 +27,8 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="infrastructure">
             <legend>
-               Инфаструктура:
-             </legend>
+              Инфаструктура:
+            </legend>
             <ul class="infrastructure-filter">
               <li>
                 <input class="infrastructure-item" type="checkbox" name="pool" id="poolid" checked>
@@ -56,21 +56,22 @@
             </legend>
             <ul class="housing-filter">
               <li>
-                <input class="type-of-housing-item" type="checkbox" name="hotel" id="hotelid">
+                <input class="type-of-housing-item" type="checkbox" name="hotel" id="hotelid" checked>
                 <label class="type-of-housing-description" for="hotelid">
                 Гостиница
-                </label>	
-              </li>
-              <li> <input class="type-of-housing-item" type="checkbox" name="motel" id="motelid">
-                <label class="type-of-housing-description" for="motelid">
-                Мотель
-                </label>	
+                </label>  
               </li>
               <li> 
-                <input class="type-of-housing-item" type="checkbox" name="apartments" id="apartmentsid">
+                <input class="type-of-housing-item" type="checkbox" name="motel" id="motelid" checked>
+                <label class="type-of-housing-description" for="motelid">
+                Мотель
+                </label>  
+              </li>
+              <li> 
+                <input class="type-of-housing-item" type="checkbox" name="apartments" id="apartmentsid" checked>
                 <label class="type-of-housing-description" for="apartmentsid">
                 Апартаменты
-                </label>	
+                </label>  
               </li>
             </ul>
           </fieldset>
@@ -93,21 +94,32 @@
             <a href="#">По рейтингу</a>
           </li>
         </ul>
+        <span class="visually-hidden"> стрелочка вниз</span>
+        <span class="visually-hidden"> стрелочка вверх </span>
       </div>
       <section>
         <h2 class="visually-hidden">Жильё</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
             <h3>
-              <a href="catalog-item.html">Amara resort & spa></a>
+              <a href="catalog-item.html">Amara resort & spa</a>
             </h3>
             <p>
               <a href="catalog-item.html">
               <img src="img/amara135x90.jpg" width="135" height="99" alt="Amara resort & spa">
               </a>
             </p>
-            <p><span class="item-description">Гостиница</span> <span class="item-description">от 4000 р.</span></p>
-            <div class="more-information"><a class="button" href="#">Подробнее</a><div>
+            <p>
+              <span class="item-description">Гостиница</span> 
+              <span class="item-description">от 4000 р.</span>
+            </p>
+            <span class="visually-hidden">
+            4 звезды
+            </span>
+            <span class="rating">
+            Рейтинг: 8,5
+            </span>
+            <div class="more-information"><a class="button" href="#">Подробнее</a></div>
             <div class="rent-button"><a class="rent" href="#">Забронировать</a></div>
           </li>
           <li class="catalog-item">
@@ -120,11 +132,17 @@
               </a>
             </p>
             <p>
-            	<span class="item-description">Мотель</span> 
-            	<span class="item-description">от 3000 р.</span>
+              <span class="item-description">Мотель</span> 
+              <span class="item-description">от 3000 р.</span>
             </p>
+            <span class="visually-hidden">
+            3 звезды
+            </span>
+            <span class="rating">
+            Рейтинг: 8,9
+            </span>
             <div class="more-information"><a class="button" href="#">Подробнее</a></div>
-            <div class="rent-button"><a class="rent" href="#">Забронировать</a><div>
+            <div class="rent-button"><a class="rent" href="#">Забронировать</a></div>
           </li>
           <li class="catalog-item">
             <h3>
@@ -135,8 +153,16 @@
               <img src="img/villas135x90.jpg" width="135" height="90" alt="Villas at poco diablo">
               </a>
             </p>
-            <p><span class="item-description">Апартаменты</span> 
-            <span class="item-description">от 2000 р.</span></p>
+            <p>
+              <span class="item-description">Апартаменты</span> 
+              <span class="item-description">от 2000 р.</span>
+            </p>
+            <span class="visually-hidden">
+            2 звезды
+            </span>
+            <span class="rating">
+            Рейтинг: 9,2
+            </span>
             <div class="more-information"><a class="button" href="#">Подробнее</a></div>
             <div class="rent-button"><a class="rent" href="#">Забронировать</a></div>
           </li>
@@ -146,7 +172,7 @@
     <footer class="main-footer">
       <span>#VISITSEDONA</span>
       <div>
-        <ul >
+        <ul class="social-button-list">
           <li><a class="social-button" href="#">
             twitter
             </a>
