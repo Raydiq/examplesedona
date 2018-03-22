@@ -2,7 +2,7 @@
  body{
      margin: 0;
      padding: 0;
-     font-family: "PT Sans", Arial, serif;
+     font-family: "PT Sans", Arial, sans-serif;
      font-size: 14px;
      line-height: 21px;
      font-weight: 500;
@@ -13,7 +13,27 @@
  a {
      text-decoration: none;
 }
- 
+ @font-face {
+     font-family: "PTSansRegular";
+     src: url("../fonts/PTSansRegular/PTSansRegular.eot");
+     src: url("../fonts/PTSansRegular/PTSansRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff"), url("../fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");
+     font-style: normal;
+     font-weight: normal;
+}
+ @font-face {
+     font-family: "PTSansItalic";
+     src: url("../fonts/PTSansItalic/PTSansItalic.eot");
+     src: url("../fonts/PTSansItalic/PTSansItalic.eot?#iefix")format("embedded-opentype"), url("../fonts/PTSansItalic/PTSansItalic.woff") format("woff"), url("../fonts/PTSansItalic/PTSansItalic.ttf") format("truetype");
+     font-style: normal;
+     font-weight: normal;
+}
+ @font-face {
+     font-family: "PTSansBold";
+     src: url("../fonts/PTSansBold/PTSansBold.eot");
+     src: url("../fonts/PTSansBold/PTSansBold.eot?#iefix")format("embedded-opentype"), url("../fonts/PTSansBold/PTSansBold.woff") format("woff"), url("../fonts/PTSansBold/PTSansBold.ttf") format("truetype");
+     font-style: normal;
+     font-weight: normal;
+}
  .visually-hidden {
      position: absolute;
      clip: rect(0 0 0 0);
@@ -23,11 +43,12 @@
 }
 /*навигация на главной странице*/
  .main-navigation-wrapper{
+     min-height: 56px; /*временный тег*/
      width: 100%;
      background-color: #fff;
+     outline: 2px solid #c34; /*временный тег*/
      display: flex;
      justify-content: center;
-     
  }
  .main-navigation{
      color: #000000;
@@ -35,51 +56,45 @@
      line-height: 26px;
      font-weight: 700;
      font-size: 14px;
+     outline: 3px solid #000000; /*временный тег*/
+     min-height: 56px; /*временный тег*/
      width: 1200px;
      display: flex;
      flex-direction: column;
      justify-content: center;
-     padding-bottom: 17px;
-     padding-top: 13px;
 }
 .main-logo{
+     outline: 1px solid #000; /*временный тег*/
      height: 70px;
      width: 137px;
      position: absolute;
 }
  .site-navigation{
-     width: 1200px;
      list-style: none;
      padding: 0px;
      margin:0;
+     min-height: 56px;
      width: auto;
+     outline: 1px solid #c2c2;
      display: flex;
-     justify-content: space-around;
+     justify-content: space-between;
 }
-
+.site-navigation li{
+     width: 300px;
+     outline: 1px solid #f91;
+     padding-top:21px;
+     padding-bottom: 21px;
+     
+}
 .item-info,
-.item-photo {
-     text-align: left; 
+.item-photo{
+     text-align: left;
+     padding-left: 71px;
 }
 .item-map,
 .item-hotel{
      text-align: right;
-}
-.main-navigation li{
-     width: 300px;
-     box-sizing: border-box;
-}
-.item-info{
-     padding-left: 73px;
-}
-.item-hotel{
-     padding-right: 73px;
-}
-.item-photo{
-     padding-left:14px;
-}
-.item-map{
-     padding-right: 14px;
+     padding-right: 72px;
 }
  .site-navigation a:link{
      color: #827167;
@@ -107,7 +122,7 @@
 .features-photo img{
      margin: 0 auto;
      border: 1px solid transparent;
-     margin-top: 75px;
+     margin-top: 77px;
      margin-left: 370px;
 }
 /*Спиксок преимуществ*/
@@ -115,13 +130,14 @@
      list-style: none;
      text-align: center;
      margin:0;
-     padding:0;    
+     padding:0;
 }
 .sedona-features{
      min-height: 844px;
      width: 1200px;
      display: flex;
      flex-direction: column;
+     outline: 2px solid #c765;
      margin: 0 auto;
 }
  .sedona-description{
@@ -129,14 +145,14 @@
      text-align: center;
      font-size: 21px;
      line-height: 26px;
-     margin-bottom: 27px;
+     margin-bottom: 33px;
 }
  .table-name{
      font-size: 14px;
      line-height: 26px;
      color: #333333;
      text-align: center;
-     margin-bottom: 50px;
+     margin-bottom: 56px;
 }
  .features-list{/*70 95 161*/
      background-color: #ffffff;
@@ -145,23 +161,27 @@
      line-height:21px;
      display: flex;
      justify-content: space-between;
-     margin-top:158px;
-    /* margin-bottom: 70px;*/
+     outline: 2px solid #c78;
+     margin-left: 73px;
+     margin-right:64px;
+     margin-top:161px;
+     margin-bottom: 84px;
 }
 .features-item-first{
-     width: 400px;
+     margin-right: 133px;
+     outline: 5px solid #b12;
 }
 .features-item-second{
+     margin-right: 122px;
+}
+.features-list li{
+     outline: 3px solid #000;
      width: 400px;
 }
-.features-item{
-     width: 400px;
-}
- .features-list p{
+ .features-item p{
      color: #333333;
      font-size: 14px;
      font-weight: 21px;
-     margin-bottom: 84px;
 }
  .features-item h3{
      color: #000000;
@@ -170,6 +190,7 @@
  .first-features, .second-features{
      background-color: #81b3d2;
      color: #ffffff;
+     outline: 2px solid #8198;
      display: flex;
      justify-content: space-between;
 
@@ -182,6 +203,7 @@
 }
 .first-features-block{
      display: block;
+     outline: 4px solid #000;
      margin-top: 47px;
      margin-left: 60px;
 }
@@ -189,24 +211,25 @@
      background-color: #e3dadb;
      height: 259px;
      width: 800px; 
+     outline: 3px solid #e8e;
 }
 .second-features-block{
      display: block;
-
+     outline: 4px solid #000;
+     margin-top: 46px;
      margin-right:49px;
-     margin-top:44px;
 }
 .second-features img{
      background-color: #e3dadb;
-     height: 256px;
+     height: 259px;
      width: 800px; 
+     outline: 3px solid #e8e;
 }
  .sedona-features h3{
      font-size: 21px;
      line-height: 21px;
      padding:0;
      margin: 0;
-     margin-bottom: 22px;
 }
  .features{
      background-color: #eeeeee;
@@ -214,89 +237,38 @@
  .features p, span{
      color: #333333;
 }
-.last-feature-block{
-     display: flex;
-     box-sizing: border-box;
-     width: 1200px;
- }
- .last-feature-block li{
-     width: 400px;
-
- }
-.last-feature-block h3{
-     width: 119px;
-     display: block;
-     white-space: pre-wrap;
-     margin-top:48px;
-     margin-bottom:24px;
-}
-.last-feature-block span{
-     display: block;
-     margin-bottom: 21px;
-}
-.last-feature-block p{
-     display: block;
-     margin-bottom: 61px;
-}
-.feature-item-block-1{
-     background-color: #eee;
-}
-.feature-item-block-1 h3{
-     margin-left:140px;
-}
-.feature-item-block-2{
-     background-color: #eee;
-}
-.feature-item-block-2 h3{
-     margin-left:143px;
-}
-.feature-item-block-3{
-     background-color: #eee;
-}
-.feature-item-block-3 h3{
-     margin-left:144px;
-}
 /*карта*/
-.map-title{
+ .map-title{
      font-size: 30px;
      line-height: 36px;
      text-align: center;
-     margin: 0;
-     margin-top:51px;
+     margin-top:65px;
 }
-.map-description{
+ .map-description{
      line-height: 24px;
      font-size: 14px;
      color: #333333;
      text-align: center;
-     margin-bottom: 130px;
-     margin-top: 25px;
+     margin-bottom: 136px;
 }
 .modal-map img{
      display: block;
      margin:0 auto;
-     height: 596px;
 }
 /*футер*/
 .main-footer{
+     min-height: 120px; /*временный тег*/
      width: 1200px;
+     outline: 1px solid #c83;
      display: flex;
      margin:0 auto; 
-     justify-content: center; 
-     margin-top: -120px;
-     background-color: #fff;
-     opacity: 0.9;
-     position: relative;
+     justify-content: center;   
 }
-
 .container-footer{
-     width: 1200px;
+     width: 967px;
+     outline: 4px solid #000;
      display: flex;
-}
-.visit-span,
-.social-wrapper{
-     width: 400px;
-     display: flex;
+     justify-content: space-between;
 }
  .main-footer span{
      font-size: 21px;
@@ -305,73 +277,32 @@
      text-align: left;
      color: #000000;
      margin: 0px;
+     width: 33%;
+     outline: 1px solid #c32;
      display: block;
-     box-sizing: border-box;
-     margin-top:45px;
-     margin-left: 133px;
-     margin-bottom: 49px;
 }
 .footer-copyright{
      margin: 0px;
      padding: 0;
+     outline: 1px solid #c462;
      display: block;
-     width: 400px;
+     width: 33%;
 }
 .footer-copyright p{
      line-height: 26px;
      font-weight: 400;
-     display: block;
-     margin:0;
-     margin-left: 103px;
-     margin-top: 46px;
-}
-.footer-copyright a{
-     display: flex;
-     width: 114px;
-     height: 43px;
-     background-color: transparent;
-     margin-left:185px;
-     margin-top: -34px;
-     background-image: url(../img/svg/logo-htmlacademy.svg);
-     background-repeat: no-repeat;
-}
-.footer-copyright svg{
-     margin:0;
-     padding:0;
-     margin-left:95px;
-     margin-bottom:41px;
 }
 .social{
      padding: 0px;
      margin: 0px;
+     min-height: 48px;
      display: block;
-     width: 400px;
+     width: 33%;
+     outline: 1px solid #000;
      list-style: none;
-     display: flex;
-     justify-content: space-between;
-}
-.social-block{
-     width: 150px;
-     display: flex;
-     align-items: center;
-     margin-left:124px;
-}
-.social-button{
-     width: 46px;
-     height: 46px;
-     background-color: #81b3d2;
-     opacity: 1;
-     display: flex;
-  align-items: center;
-  justify-content: center;
+     margin-left: 255px;
 }
 /*форма*/
-.form-block{
-     height: 395px;
-     background-color: #000;
-     display: flex;
-  flex-wrap: wrap;
-}
  .searching-form input{
      font: inherit;
      background-color: #f2f2f2;
@@ -379,7 +310,6 @@
      line-height: 26px;
      font-size: 14px;
      font-weight: bold;
-
 }
  .searching-form label{
      line-height: 26px;
@@ -404,6 +334,7 @@
      width: 566px;
      height: 481px;
      background-color: #ffffff;
+     padding:0;
 }
  .form-submit{
      width: 458px;
@@ -414,27 +345,15 @@
      font-weight: bold;
      color:#ffffff;
      text-transform: uppercase;
-
-
 }
  .comming{
      background-color: #093b5b;
-     width: 568px;
-}
-.comming input{
-     
-}
- .comming-out{
-     background-color: #093b;
-     width: 568px;
 }
  .number-of-adult{
      background-color: #5b095a;
-     width: 284px;
 }
  .number-of-children{
      background-color: #81b3d2;
-     width: 284px;
 }
 /*страница каталога*/
  .inner-page {

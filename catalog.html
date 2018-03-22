@@ -9,79 +9,97 @@
   </head>
   <body class="inner-page">
     <header>
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-        <img src="img/main-header138x70.png" width="138" height="70" alt="Логотип Седона">   
-        </a>  
+      <div class="main-navigation-wrapper">
+      <a class="main-logo" href="index.html">
+        <img src="img/main-header138x70.png" width="138" height="70" alt="Логотип Седона">
+        </a>
+      <nav class="main-navigation">  
         <ul class="site-navigation">
-          <li class="site-navigation-current"><a href="#">Информаци</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li class="item-info"><a href="#">Информация</a></li>
+          <li class="item-photo"><a href="#">Фото и видео</a></li>
+          <li class="item-map"><a href="#">Карта штата</a></li>
+          <li class="item-hotel"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
+      </div>
     </header>
     <main>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр жилья</h2>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">  <div class="infrastructure-section">
           <fieldset class="infrastructure">
             <legend>
               Инфаструктура:
             </legend>
             <ul class="infrastructure-filter">
               <li>
-                <input class="infrastructure-item" type="checkbox" name="pool" id="poolid" checked>
+                <input class="visually-hidden " type="checkbox" name="pool" id="poolid" checked>
                 <label class="infrastructure-description" for="poolid">
                 Бассейн
                 </label>
               </li>
               <li>
-                <input class="infrastructure-item" type="checkbox" name="parking-place" id="parking-placeid">
+                <input class="visually-hidden " type="checkbox" name="parking-place" id="parking-placeid">
                 <label class="infrastructure-description" for="parking-placeid">
                 Парковка
                 </label>
               </li>
               <li>
-                <input class="infrastructure-item" type="checkbox" name="wi-fi" id="wi-fiid" >
+                <input class="visually-hidden " type="checkbox" name="wi-fi" id="wi-fiid" >
                 <label class="infrastructure-description" for="wi-fiid">
                 Wi-Fi
                 </label>
               </li>
             </ul>
           </fieldset>
+          </div>
+          <div class="house-filter">
           <fieldset class="type-of-housing">
             <legend>
               Тип Жилья:
             </legend>
             <ul class="housing-filter">
               <li>
-                <input class="type-of-housing-item" type="checkbox" name="hotel" id="hotelid" checked>
+                <input class="visually-hidden" type="checkbox" name="hotel" id="hotelid" checked>
                 <label class="type-of-housing-description" for="hotelid">
                 Гостиница
                 </label>  
               </li>
               <li> 
-                <input class="type-of-housing-item" type="checkbox" name="motel" id="motelid" checked>
+                <input class="visually-hidden" type="checkbox" name="motel" id="motelid" checked>
                 <label class="type-of-housing-description" for="motelid">
                 Мотель
                 </label>  
               </li>
               <li> 
-                <input class="type-of-housing-item" type="checkbox" name="apartments" id="apartmentsid" checked>
+                <input class="visually-hidden" type="checkbox" name="apartments" id="apartmentsid" checked>
                 <label class="type-of-housing-description" for="apartmentsid">
                 Апартаменты
                 </label>  
               </li>
             </ul>
           </fieldset>
-          <button class="result" type="submit">
-          Показать
-          </button>
+          </div>
+          <div class="filter-range">
+      <div class="filter-range-title">Стоимость в сутки (р):</div>
+      <div class="price-controls">
+        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+      </div>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
+      <button class="btn-transparent" type="submit">Показать</button>
+    </div>
         </form>
       </section>
+      <div class="sort-list">
       <p class="done">Найдено:3</p>
-      <div id="catalog-sorter" class="sort">
+      
         <span class="sorter">Сортировка:</span>
         <ul class="sorting">
           <li class="sort-item">
@@ -119,8 +137,10 @@
             <span class="rating">
             Рейтинг: 8,5
             </span>
-            <div class="more-information"><a class="button" href="#">Подробнее</a></div>
-            <div class="rent-button"><a class="rent" href="#">Забронировать</a></div>
+            <div class="more-information">
+              <a class="button" href="#">Подробнее</a></div>
+            <div class="rent-button">
+              <a class="rent" href="#">Забронировать</a></div>
           </li>
           <li class="catalog-item">
             <h3>
@@ -170,27 +190,45 @@
       </section>
     </main>
     <footer class="main-footer">
+       <div class="container-footer">
+      <div class="visit-span">
       <span>#VISITSEDONA</span>
-      <div>
-        <ul class="social-button-list">
-          <li><a class="social-button" href="#">
-            twitter
+      </div>
+       
+      <div class="social-wrapper">
+       <div class="social-block">
+        <ul class="social">
+          <li><a class="social-button " href="#">
+            <span class="visually-hidden">twitter</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
+              <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
+
             </a>
           </li>
           <li><a class="social-button" href="#">
-            facebook
+            <span class="visually-hidden">facebook</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
             </a>
           </li>
           <li><a class="social-button" href="#">
-            youtube
+            <span class="visually-hidden">youtube</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+
             </a>
           </li>
         </ul>
       </div>
-      <p class="footer-copyright">
-        <b>Website by</b> 
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-      </p>
+     </div>
+
+
+      <div class="footer-copyright">
+        <p>Website by</p>
+        <a class="button" href="https://htmlacademy.ru">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+
+      </div>
+    </div>
     </footer>
   </body>
 </html>
