@@ -141,7 +141,7 @@
  .features-list{/*70 95 161*/
      background-color: #ffffff;
      width: 1200px;
-     text-align: 14px
+     font-size:14px;
      line-height:21px;
      display: flex;
      justify-content: space-between;
@@ -160,7 +160,7 @@
  .features-list p{
      color: #333333;
      font-size: 14px;
-     font-weight: 21px;
+     line-height: 21px;
      margin-bottom: 84px;
 }
  .features-item h3{
@@ -420,6 +420,7 @@
  .comming{
      background-color: #093b5b;
      width: 568px;
+
 }
 .comming input{
      
@@ -610,7 +611,7 @@
      background-color: #4077a0;
      background: url(../img/background1200x217.jpg) no-repeat;
      background-size: 100%;
-     display: flexl
+     display: flex;
      flex-wrap: wrap;
 }
 
@@ -708,7 +709,7 @@
 }
  .item-description{
      color: #333333;
-     font-style: 14px;
+     font-size: 14px;
      line-height: 21px;
 }
  .rating {
