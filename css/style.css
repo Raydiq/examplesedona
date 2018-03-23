@@ -91,11 +91,16 @@
      color: #000000;
      opacity: 0.3;
 }
- .link-active a:active{
+ .link-active a{
      color: #827167;
      opacity: 1;
 }
 /*картинка на главноей странице после заголовка*/
+
+.features-main{
+     width: 1200px;
+     margin: 0 auto;
+}
 .features-photo{
      background-image: url(../img/photoheader1200x773.jpg);
      background-size: cover;
@@ -119,11 +124,10 @@
      padding:0;    
 }
 .sedona-features{
-     min-height: 844px;
-     width: 1200px;
      display: flex;
-     flex-direction: column;
-     margin: 0 auto;
+     flex-direction: inline-block;
+     flex-wrap: wrap;
+
 }
  .sedona-description{
      font-weight: 700;
@@ -131,13 +135,14 @@
      font-size: 21px;
      line-height: 26px;
      margin-bottom: 27px;
+     margin-top: -2px;
 }
  .table-name{
      font-size: 14px;
      line-height: 26px;
      color: #333333;
      text-align: center;
-     margin-bottom: 50px;
+     margin-bottom: 52px;
 }
  .features-list{/*70 95 161*/
      background-color: #ffffff;
@@ -146,13 +151,10 @@
      line-height:21px;
      display: flex;
      justify-content: space-between;
-     margin-top:158px;
-    /* margin-bottom: 70px;*/
+     padding-top:160px;
 }
 .features-item-first{
      width: 400px;
-     display: flex;
-     flex-wrap: wrap;
 }
 .features-item-second{
      width: 400px;
@@ -164,40 +166,56 @@
      color: #333333;
      font-size: 14px;
      line-height: 21px;
-     margin-bottom: 84px;
+     margin-bottom: 83px;
 }
- .features-item h3{
+ .features-item h3,
+ .features-item-first h3,
+ .features-item-second h3{
      color: #000000;
      font-size: 21px;
 }
  .first-features, .second-features{
      background-color: #81b3d2;
+     width: 1200px;
      color: #ffffff;
      display: flex;
-     justify-content: space-between;
+     flex-wrap: wrap;
 
+}
+.second-features-photo{
+     background-image: url(../img/thesecondreasontown800x256.jpg);
+     background-size: cover;
+     width: 800px;
+     height: 256px;
+     display: block;
+     margin: 0 auto;
 }
  .first-features span, .second-features span{
      color: #fff;
      display: block;
      margin-top: 25px;
-     margin-bottom: 26px;
+     margin-bottom: 21px;
+}
+.features-list p{
+     margin-top: 25px;
+
 }
 .first-features-block{
-     display: block;
      margin-top: 47px;
-     margin-left: 60px;
+     width: 400px;
 }
-.first-features img{
+.first-features-photo{
      background-color: #e3dadb;
-     height: 259px;
+     background: url(../img/thefirstreasontown800x256.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 256px;
      width: 800px; 
 }
 .second-features-block{
-     display: block;
-
-     margin-right:49px;
-     margin-top:44px;
+     width: 400px;
+     align-items: center;
+     padding-top: 45px;
 }
 .second-features img{
      background-color: #e3dadb;
@@ -213,51 +231,30 @@
 }
  .features{
      background-color: #eeeeee;
+     width: 400px;
 }
  .features p, span{
      color: #333333;
 }
-.last-feature-block{
-     display: flex;
-     box-sizing: border-box;
-     width: 1200px;
- }
- .last-feature-block li{
-     width: 400px;
+.features h3{
+     padding-top: 47px;
+     padding-bottom: 24px;
+     margin:0;
+     padding-left: 119px;
+     padding-right: 120px;
+}
 
- }
-.last-feature-block h3{
-     width: 119px;
-     display: block;
-     white-space: pre-wrap;
-     margin-top:48px;
-     margin-bottom:24px;
+.tourists h3{
+     padding-left: 140px;
+     padding-right: 140px;   
 }
-.last-feature-block span{
-     display: block;
-     margin-bottom: 21px;
-}
-.last-feature-block p{
-     display: block;
-     margin-bottom: 61px;
-}
-.feature-item-block-1{
-     background-color: #eee;
-}
-.feature-item-block-1 h3{
-     margin-left:140px;
-}
-.feature-item-block-2{
-     background-color: #eee;
-}
-.feature-item-block-2 h3{
-     margin-left:143px;
-}
-.feature-item-block-3{
-     background-color: #eee;
-}
-.feature-item-block-3 h3{
-     margin-left:144px;
+.features p{
+     margin:0;
+     padding-top: 22px;
+     padding-left:60px;
+     padding-right:60px;
+     padding-bottom: 60px;
+
 }
 /*карта*/
 .map-title{
@@ -447,15 +444,26 @@
      width: 1200px;
      margin: 0 auto;
 }
+.catalog-container{
+     width: 1056px;
+     margin: 0 auto;
+}
+.filter{
+     display: flex;
+     /*outline: 4px solid #f99;*/
+}
  .filter fieldset {
      border: none;
+     margin: 0;
+     padding:0;
 }
 /*двойной ползунок*/
 .filter-range {
   width: 330px;
-
+  outline: 1px solid #f87;
   color: #ffffff;
   text-transform: uppercase;
+  padding-top: 25px;
 }
 
 .filter-range-title {
@@ -593,20 +601,42 @@
      list-style: none;
      padding:0;
      margin:0;
+     padding-bottom: 8px;
+     padding-left: 39px;
 }
+.infrastructure-filter li{
+     margin-bottom: 25px;
+}
+
 .infrastructure-section{ 
+    /* outline: 1px solid #000;*/
+     padding-top:27px;
+     padding-left:73px;
+}
+.house-filter{
+    /* outline: 1px solid #e12;*/
+    padding-left:116px;
+    padding-top:27px;
+    margin-right: 346px;
 
 }
  .housing-filter{         /*фильтр типа жилья*/
      list-style: none;
      padding:0;
      margin:0;
+     padding-left: 43px;
+}
+.housing-filter li{
+     margin-bottom: 25px;
 }
  .filter legend {
      color: #ffffff;
      font-size: 16px;
      line-height: 21px;
      font-weight: bold;
+     font-size: 16px;
+     line-height: 21px;
+     padding-bottom: 25px;
 }
  .filters{
      background-color: #4077a0;
@@ -635,6 +665,8 @@
      justify-content: flex-start;
      flex-wrap: wrap;
      outline: 2px solid #000;  /*временный тег*/
+     padding-top: 35px;
+     padding-bottom: 31px;
 
  }
  .done {
@@ -644,9 +676,10 @@
      color: #000000;
      display: block;
      outline: 2px solid #c64; /*временный тег*/
+     margin:0;
      margin-left: 73px;
-     margin-bottom: 31px;
-     margin-top:31px;
+     margin-top: -6px;
+    /* margin-top:29px;*/
 }
  .sorter{
      font-size: 12px;
@@ -654,9 +687,10 @@
      color: #000000;
      display: block;
      outline: 2px solid #c89; /*временный тег*/
-     margin-left: 49px;
-     padding-top: 36px;
-     padding-bottom: 36px;
+     margin-left: 46px;
+     padding-left: 2px;
+     /*padding-top: 36px;
+     padding-bottom: 36px;*/
 }
 .sorting{
      outline: 2px solid #c14; /*временный тег*/
@@ -667,8 +701,8 @@
      padding: 0;
      list-style: none;
      margin-left: 39px;
-     padding-top: 36px;
-     padding-bottom: 36px;
+     /*padding-top: 36px;
+     padding-bottom: 36px;*/
      width: 239px;
 }
 .sort-item{
@@ -676,6 +710,7 @@
      width: 239px;
      display: flex;
      justify-content: space-between;
+     padding-left: 2px;
 }
  .sorting .sort-item a{
      color: #000000;
