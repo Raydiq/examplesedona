@@ -81,9 +81,6 @@
 .item-map{
      padding-right: 14px;
 }
- .site-navigation a:link{
-     color: #827167;
-}
  .site-navigation a{
      color: #000000;
 }
@@ -93,6 +90,10 @@
  .site-navigation a:active{
      color: #000000;
      opacity: 0.3;
+}
+ .link-active a:active{
+     color: #827167;
+     opacity: 1;
 }
 /*картинка на главноей странице после заголовка*/
 .features-photo{
@@ -150,6 +151,8 @@
 }
 .features-item-first{
      width: 400px;
+     display: flex;
+     flex-wrap: wrap;
 }
 .features-item-second{
      width: 400px;
@@ -344,7 +347,6 @@
 .social{
      padding: 0px;
      margin: 0px;
-     display: block;
      width: 400px;
      list-style: none;
      display: flex;
@@ -367,7 +369,6 @@
 }
 /*форма*/
 .form-block{
-     height: 395px;
      background-color: #000;
      display: flex;
   flex-wrap: wrap;
