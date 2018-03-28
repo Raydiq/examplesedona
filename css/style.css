@@ -800,12 +800,12 @@
              justify-content: space-between;
      padding-left: 2px;
 }
- .sorting .sort-item a{
+.sort-item a{
      color: #000000;
      opacity: 0.3;
      border-bottom: 1px dashed rgba(0,0,0,0.3);
 }
- .link a{
+.link a{
      color: #81b3d2;
      border-bottom:0;
      opacity: 1;
