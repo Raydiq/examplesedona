@@ -2,7 +2,7 @@
  body{
      margin: 0;
      padding: 0;
-     font-family: "PT Sans", Arial, serif;
+     font-family: "PT Sans", Arial, sans-serif;
      font-size: 14px;
      line-height: 21px;
      margin:0 auto;
@@ -424,6 +424,7 @@
      top: 205px;
      display: block;
      left: 317px;
+     cursor: pointer;
 }
  .search-hotel:hover{
      background-color: #604e43;
@@ -453,6 +454,8 @@
      color:#ffffff;
      text-transform: uppercase;
      background-color: #81b3d2;
+     cursor: pointer;
+
 }
  .form-submit:hover{
      background-color: #669ec0;
@@ -539,6 +542,7 @@
      left: 428px;
      bottom: -3px;
      fill: #a9a9a9 
+     cursor: pointer;
 }
  .date-comming-out svg{
      width: 23px;
@@ -547,6 +551,7 @@
      left: 428px;
      bottom: -3px;
      fill: #a9a9a9 
+     cursor: pointer;
 }
  .plus:hover line, .minus:hover line, .plus-child:hover line, .minus-child:hover line{
      stroke: #000;
@@ -579,10 +584,10 @@
 }
 /*двойной ползунок*/
  .filter-range {
-     width: 330px;
-     color: #ffffff;
-     text-transform: uppercase;
-     padding-top: 25px;
+    width: 323px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 27px;
 }
  .filter-range-title {
      margin-bottom: 9px;
@@ -625,13 +630,14 @@
      width: 50px;
      margin: 0;
      color: inherit;
-     font: inherit;
+     font-size: 14px;
+     line-height: 21px;
      background: none;
      border: none;
 }
  .range-controls {
      position: relative;
-     margin-bottom: 32px;
+     margin-bottom: 30px;
 }
  .range-controls .scale {
      height: 2px;
@@ -665,10 +671,10 @@
 }
  .btn-transparent {
      display: block;
-     margin: 0 auto;
+     margin: 0 87px;
      padding: 6px 35px;
      font-size: 14px;
-     line-height: 20px;
+     line-height: 21px;
      color: #ffffff;
      text-transform: uppercase;
      background: transparent;
@@ -734,8 +740,6 @@
 }
  .button{
      color: #ffffff;
-    /*padding:4px 16px 4px 17px;
-    */
 }
  .result{
      background-color: transparent;
@@ -964,7 +968,6 @@
  .catalog-list .button:active{
      color: rgba(255,255,255,0.3);
      background-color:#5496bd;
-     opacity: 0.3;
 }
 /*забронировать*/
  .catalog-list .rent{
@@ -1108,7 +1111,7 @@
              align-items: center;
 }
  .main-footer span{
-     width: 190px;
+     width: 130px;
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
@@ -1118,8 +1121,8 @@
      color: #000000;
      margin: 0px;
      margin:0 auto;
-     margin-top:44px;
-     margin-bottom: 51px;
+     margin-top:46px;
+     margin-bottom: 48px;
 }
  .catalog-footer span{
      font-size: 21px;
@@ -1244,7 +1247,7 @@
  .social a:active{
      background-color: #5496bd;
 }
- .social svg:active{
+ .social-button:active path{
      opacity: 0.3 
 }
  .form-block input:hover{
