@@ -152,8 +152,6 @@
      display: flex;
      -webkit-box-orient: vertical;
      -webkit-box-direction: normal;
-         -ms-flex-direction: inline-block;
-             flex-direction: inline-block;
      -ms-flex-wrap: wrap;
          flex-wrap: wrap;
 }
@@ -551,7 +549,7 @@
      position: absolute;
      left: 426px;
      bottom: -3px;
-     fill: #a9a9a9 
+     fill: #a9a9a9; 
      cursor: pointer;
 }
  .plus:hover line, .minus:hover line, .plus-child:hover line, .minus-child:hover line{
