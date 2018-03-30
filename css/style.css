@@ -158,16 +158,16 @@
          flex-wrap: wrap;
 }
  .sedona-description{
-     background-color: #fff;
-     padding-top: 61px;
-     font-weight: 700;
-     text-align: center;
-     font-size: 21px;
-     line-height: 26px;
-     margin:0;
-     padding-right: 380px;
-     padding-left: 378px;
-     padding-bottom:27px;
+    background-color: #fff;
+    padding-top: 59px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    padding-right: 355px;
+    padding-left: 361px;
+    padding-bottom: 27px;
 }
  .table-name{
      background-color: #fff;
@@ -351,7 +351,7 @@
      line-height: 36px;
      text-align: center;
      margin: 0;
-     padding-top: 46px;
+     padding-top: 48px;
      background-color: #fff;
 }
  .map-description{
@@ -361,7 +361,7 @@
      margin:0;
      text-align: center;
      padding-bottom: 133px;
-     padding-top: 29px;
+     padding-top: 23px;
      background-color: #fff;
 }
  .modal-map{
@@ -381,7 +381,7 @@
      display: flex;
      -ms-flex-wrap: wrap;
          flex-wrap: wrap;
-     padding-top: 55px;
+     padding-top: 56px;
      -webkit-box-pack: center;
          -ms-flex-pack: center;
              justify-content: center;
@@ -425,6 +425,7 @@
      display: block;
      left: 317px;
      cursor: pointer;
+     padding-bottom: 6px;
 }
  .search-hotel:hover{
      background-color: #604e43;
@@ -465,14 +466,14 @@
      background-color: #5496bd;
 }
  .comming input{
-     width: 333px;
-     margin-left: 20px;
-     margin-bottom: 28px;
+     width: 331px;
+     margin-left: 17px;
+     margin-bottom: 30px;
 }
  .comming-out input{
-     width: 334px;
-     margin-left: 20px;
-     margin-bottom: 31px;
+     width: 333px;
+     margin-left: 14px;
+     margin-bottom: 30px;
 }
  .comming input[type="text"]{
      padding-left: 13px;
@@ -526,20 +527,20 @@
      fill:#81b3d2;
 }
  .number-of-adult input{
-     margin-left:40px;
-     width: 114px;
+     margin-left:35px;
+     width: 112px;
      text-align: center;
 }
  .number-of-children input{
-     margin-left:27px;
-     width: 114px;
+     margin-left:24px;
+     width: 113px;
      text-align: center;
 }
  .date-comming svg{
      width: 23px;
      height: 23px;
      position: absolute;
-     left: 428px;
+     left: 426px;
      bottom: -3px;
      fill: #a9a9a9 
      cursor: pointer;
@@ -548,7 +549,7 @@
      width: 23px;
      height: 23px;
      position: absolute;
-     left: 428px;
+     left: 426px;
      bottom: -3px;
      fill: #a9a9a9 
      cursor: pointer;
@@ -597,11 +598,12 @@
 }
  .price-controls {
      position: relative;
-     height: 36px;
+     height: 33px;
      margin-bottom: 20px;
      font-size: 0;
      border: 2px solid #ffffff;
      border-radius: 2px;
+     width: 314px;
 }
  .price-controls::after {
      content: "";
@@ -624,7 +626,7 @@
 }
  .price-controls .min-price, .price-controls .max-price {
      width: 90px;
-     padding-left: 65px;
+     padding-left: 61px;
 }
  .price-controls input {
      width: 50px;
@@ -637,7 +639,7 @@
 }
  .range-controls {
      position: relative;
-     margin-bottom: 30px;
+     margin-bottom: 32px;
 }
  .range-controls .scale {
      height: 2px;
@@ -671,8 +673,8 @@
 }
  .btn-transparent {
      display: block;
-     margin: 0 87px;
-     padding: 6px 35px;
+     margin: 0 85px;
+     padding: 6px 34px;
      font-size: 14px;
      line-height: 21px;
      color: #ffffff;
@@ -707,9 +709,9 @@
      padding-left:73px;
 }
  .house-filter{
-     padding-left:118px;
+     padding-left:119px;
      padding-top:27px;
-     margin-right: 346px;
+     margin-right: 348px;
 }
  .housing-filter{
     /*фильтр типа жилья*/
@@ -761,8 +763,8 @@
              justify-content: flex-start;
      -ms-flex-wrap: wrap;
      flex-wrap: wrap;
-     padding-top: 35px;
-     padding-bottom: 29px;
+     padding-top: 33px;
+     padding-bottom: 30px;
 }
  .done {
      font-size: 21px;
@@ -828,12 +830,12 @@
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
-     padding-top: 32px;
-     padding-bottom:25px;
+     padding-top: 31px;
+     padding-bottom:24px;
 }
  .desert-motel{
      padding-top: 30px;
-     padding-bottom: 25px;
+     padding-bottom: 23px;
 }
  .villas-flat{
      padding-top: 30px;
@@ -915,7 +917,7 @@
  .rent{
      margin:0;
      padding:0;
-     padding: 3px 16px 3px 17px;
+     padding: 2px 16px 3px 17px;
 }
  .info-span a{
      font-size: 14px;
@@ -959,7 +961,7 @@
      padding:0;
      color: #ffffff;
      background-color: #81b3d2;
-     padding: 3px 16px 3px 17px;
+     padding: 1px 16px 3px 17px;
 }
  .catalog-list .button:hover{
      color: #ffffff;
@@ -988,7 +990,7 @@
  .elements{
      margin-top: auto;
      margin-bottom: 6px;
-     margin-left: 523px;
+     margin-left: 522px;
 }
  .stars{
      background-image: url(../img/svg-sedona/star.svg);
@@ -1119,8 +1121,7 @@
      line-height: 26px;
      font-weight: 700;
      color: #000000;
-     margin: 0px;
-     margin:0 auto;
+     margin-left: 130px;
      margin-top:46px;
      margin-bottom: 48px;
 }
