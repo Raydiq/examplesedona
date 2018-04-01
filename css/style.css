@@ -512,6 +512,8 @@
      top: 13px;
      width: 38px;
      border: 0;
+     background-color: transparent;
+     outline: none;
 }
  .minus{
      position: absolute;
@@ -519,6 +521,8 @@
      top: 12px;
      border: 0;
      z-index: 1;
+     background-color: transparent;
+     outline: none;
 }
  .plus-child{
      position: absolute;
@@ -526,6 +530,8 @@
      top: 13px;
      width: 38px;
      border: 0;
+     background-color: transparent;
+     outline: none;
 }
  .minus-child{
      position: absolute;
@@ -533,6 +539,14 @@
      top: 12px;
      border: 0;
      z-index: 1;
+     background-color: transparent;
+     outline: none;
+}
+.amount button:hover{
+	outline: none;
+}
+.amount button:active{
+	outline: none;
 }
  .form-block svg:hover{
      fill: #000;
