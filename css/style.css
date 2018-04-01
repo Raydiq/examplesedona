@@ -394,7 +394,7 @@
      flex-wrap: wrap;
 }
  .searching-form input{
-     width: 345px;
+     width: 112px;
      height:36px;
      font: inherit;
      background-color: #f2f2f2;
@@ -407,6 +407,7 @@
      line-height: 26px;
      font-size: 14px;
      font-weight: bold;
+     padding-top: 5px;
      position: relative;
 }
  .search-hotel{
@@ -426,6 +427,7 @@
      left: 317px;
      cursor: pointer;
      padding-bottom: 6px;
+}
 }
  .search-hotel:hover{
      background-color: #604e43;
@@ -496,31 +498,41 @@
      justify-content: space-between;
 }
  .number-of-adult{
-     width: 240px;
+     margin-right: 47px;
+     position: relative;
+}
+.child-amount,
+.adult-amount{
+	text-align: center;
+	position: relative;
 }
  .plus{
      position: absolute;
-     width: 14px;
-     left: 201px;
-     top: 3px;
+     right: 0px;
+     top: 13px;
+     width: 38px;
+     border: 0;
 }
  .minus{
      position: absolute;
-     width: 12px;
-     left: 125px;
-     top: 3px;
+     width: 38px;
+     top: 12px;
+     border: 0;
+     z-index: 1;
 }
  .plus-child{
      position: absolute;
-     width: 14px;
-     left: 155px;
-     top: 3px;
+     right: 0px;
+     top: 13px;
+     width: 38px;
+     border: 0;
 }
  .minus-child{
      position: absolute;
-     width: 12px;
-     left: 80px;
-     top: 3px;
+     width: 38px;
+     top: 12px;
+     border: 0;
+     z-index: 1;
 }
  .form-block svg:hover{
      fill: #000;
@@ -528,15 +540,16 @@
  .form-block svg:active{
      fill:#81b3d2;
 }
- .number-of-adult input{
+ .number-of-adult{
      margin-left:35px;
      width: 112px;
      text-align: center;
 }
- .number-of-children input{
+ .number-of-children {
      margin-left:24px;
      width: 113px;
      text-align: center;
+     position: relative;
 }
  .date-comming svg{
      width: 23px;

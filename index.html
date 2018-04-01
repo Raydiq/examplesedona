@@ -154,35 +154,45 @@
                 <input type="text" name="date" id="dateoutid" value="4 июля 2017">
               </div>
               <div class="amount">
-                <div class="number-of-adult">
+                
                   <span class=" visually-hidden">минус</span>
                   <label class="people" for="adultid">
-                    Взрослые:
-                    <svg class="plus" width="15" height="15">
+                    Взрослые:</label>
+                    <div class="number-of-adult">
+                     <button type="bottom" class="minus">
+                    <svg  width="15" height="15">
+                      <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3"/>
+                    </svg>
+                  </button>
+                       
+                  <input class="adult-amount" type="text" name="adult" id="adultid" value="2">
+                   
+                  <span class="visually-hidden">плюс</span>
+                   <button type="bottom" class="plus">            
+                    <svg  width="15" height="15">
                       <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3" />
                       <line x1="7" y1="1" x2="7" y2="13" stroke="#a9a9a9" stroke-width="3" />
                     </svg>
-                    <svg class="minus" width="15" height="15">
-                      <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3"/>
-                    </svg>
-                  </label>
-                  <span class="visually-hidden">плюс</span>
-                  <input type="text" name="adult" id="adultid" value="2">
+                  </button>
                 </div>
-                <div class="number-of-children">
+                
                   <span class="visually-hidden">минус</span>
                   <label class="people" for="childid">
-                    Дети:
-                    <svg class="plus-child" width="15" height="15">
+                    Дети:</label>  
+                    <div class="number-of-children">
+                  <button type="bottom" class="minus-child">
+                    <svg  width="15" height="15">
+                      <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3"/>
+                    </svg>
+                  </button>
+                  <span class="visually-hidden">плюс</span>
+                  <input class="child-amount" type="text" name="child" id="childid" value="0">
+                  <button type="bottom" class="plus-child">
+                    <svg  width="15" height="15">
                       <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3" />
                       <line x1="7" y1="1" x2="7" y2="13" stroke="#a9a9a9" stroke-width="3" />
                     </svg>
-                    <svg class="minus-child" width="15" height="15">
-                      <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3"/>
-                    </svg>
-                  </label>
-                  <span class="visually-hidden">плюс</span>
-                  <input type="text" name="child" id="childid" value="0">
+                  </button>
                 </div>
               </div>
               <button class="form-submit" type="submit">
