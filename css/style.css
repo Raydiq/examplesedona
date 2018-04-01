@@ -126,7 +126,7 @@
      margin: 0 auto;
 }
  .features-photo{
- 	 background-color: #3c4c59;
+     background-color: #3c4c59;
      background-image: url(../img/photoheader1200x773.jpg);
      background-size: cover;
      width: 1200px;
@@ -224,7 +224,7 @@
      flex-wrap: wrap;
 }
  .second-features-photo{
- 	 background-color: #e3dadb;
+     background-color: #e3dadb;
      background-image: url(../img/thesecondreasontown800x256.jpg);
      background-size: cover;
      width: 800px;
@@ -368,17 +368,18 @@
      position: relative;
 }
  .modal-map img{
- 	position: absolute;
-    top: 288px;
-    z-index: 1;
-    display: block;
-    margin: 0 auto;
-    height: 594px;
+ 	 background-color: #f2f2f2;
+     position: absolute;
+     top: 288px;
+     z-index: 1;
+     display: block;
+     margin: 0 auto;
+     height: 594px;
 }
-iframe {
-	border: 0;
-	position: relative;
-	z-index: 2;
+ iframe {
+     border: 0;
+     position: relative;
+     z-index: 2;
 }
 /*форма*/
  .form-block{
@@ -402,7 +403,7 @@ iframe {
      flex-wrap: wrap;
 }
  .searching-form input{
-     width: 112px;
+     width: 40px;
      height:36px;
      font: inherit;
      background-color: #f2f2f2;
@@ -432,10 +433,10 @@ iframe {
      position: absolute;
      top: 205px;
      display: block;
-     left: 317px;
+     left: 316px;
      cursor: pointer;
      padding-bottom: 6px;
-}
+     z-index: 3;
 }
  .search-hotel:hover{
      background-color: #604e43;
@@ -445,7 +446,7 @@ iframe {
      color: rgba(255,255,255,0.3);
 }
  .form-frame {
- 	display: block;
+     display: block;
      border: 0;
      width: 568px;
      height: 396px;
@@ -453,11 +454,13 @@ iframe {
      padding:0;
      margin:0;
      position: absolute;
-     left: 317px;
+     left: 316px;
      -webkit-box-shadow: -2px 0px 12px 0px rgba(0, 0, 0, 0.5);
-     box-shadow: -2px 0px 12px 0px rgba(0, 0, 0, 0.5);
-     animation-name: bounce;
-     animation-duration: 0.6s;
+     box-shadow: -2px 0 12px 0 rgba(0, 0, 0, 0.5);
+     -webkit-animation-name: bounce;
+             animation-name: bounce;
+     -webkit-animation-duration: 0.6s;
+             animation-duration: 0.6s;
      z-index: 3;
 }
  .form-submit{
@@ -510,14 +513,15 @@ iframe {
      margin-right: 47px;
      position: relative;
 }
-.child-amount,
-.adult-amount{
-	text-align: center;
-	position: relative;
+ .child-amount, .adult-amount{
+     text-align: center;
+     position: relative;
+     padding-left: 37px;
+     padding-right: 37px;
 }
  .plus{
      position: absolute;
-     right: 0px;
+     right: 0;
      top: 13px;
      width: 38px;
      border: 0;
@@ -535,7 +539,7 @@ iframe {
 }
  .plus-child{
      position: absolute;
-     right: 0px;
+     right: 0;
      top: 13px;
      width: 38px;
      border: 0;
@@ -551,11 +555,11 @@ iframe {
      background-color: transparent;
      outline: none;
 }
-.amount button:hover{
-	outline: none;
+ .amount button:hover{
+     outline: none;
 }
-.amount button:active{
-	outline: none;
+ .amount button:active{
+     outline: none;
 }
  .form-block svg:hover{
      fill: #000;
@@ -667,6 +671,7 @@ iframe {
      padding-left: 61px;
 }
  .price-controls input {
+     min-height: 21px;
      width: 50px;
      margin: 0;
      color: inherit;
@@ -707,7 +712,7 @@ iframe {
      left: 0;
 }
  .range-toggle-max {
-     left: 80%;
+     left: 79%;
 }
  .btn-transparent {
      display: block;
@@ -732,7 +737,7 @@ iframe {
      line-height: 21px;
 }
  .filter-option{
- /*фильтр инфраструктуры*/
+    /*фильтр инфраструктуры*/
      list-style: none;
      padding:0;
      margin:0;
@@ -854,11 +859,11 @@ iframe {
      border-bottom:0;
      opacity: 1;
 }
-.sort-item a:hover{
+ .sort-item a:hover{
      color: #81b3d2;
      border-bottom: 1px dashed #81b3d2;
 }
-.sort-item a:active{
+ .sort-item a:active{
      color: #000000;
      border-bottom:0;
      opacity: 1;
@@ -919,6 +924,7 @@ iframe {
      padding:0;
 }
  .desert img{
+ 	 background-color: #f2f2f2;
      padding-left:1px;
      padding-top:5px;
 }
@@ -1297,48 +1303,103 @@ iframe {
      background-color: #fff;
      outline: 2px solid #e5e5e5;
 }
-.form-frame-none{
-	 display: none;
+ .form-frame-none{
+     display: none;
 }
  .bounceInLeft {
-  -webkit-animation-name: bounceInLeft;
-  animation-name: bounceInLeft;
+     -webkit-animation-name: bounceInLeft;
+     animation-name: bounceInLeft;
 }
-
-@keyframes bounce{
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(3000px, 0, 0);
-    transform: translate3d(3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(-25px, 0, 0);
-    transform: translate3d(-25px, 0, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+ input::-ms-clear {
+     display: none;
+}
+ @-webkit-keyframes bounce{
+     from, 60%, 75%, 90%, to {
+         -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+         animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+     from {
+         opacity: 0;
+         -webkit-transform: translate3d(3000px, 0, 0);
+         transform: translate3d(3000px, 0, 0);
+    }
+     60% {
+         opacity: 1;
+         -webkit-transform: translate3d(-25px, 0, 0);
+         transform: translate3d(-25px, 0, 0);
+    }
+     75% {
+         -webkit-transform: translate3d(10px, 0, 0);
+         transform: translate3d(10px, 0, 0);
+    }
+     90% {
+         -webkit-transform: translate3d(-5px, 0, 0);
+         transform: translate3d(-5px, 0, 0);
+    }
+     to {
+         -webkit-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0);
+    }
+}
+ @keyframes bounce{
+     from, 60%, 75%, 90%, to {
+         -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+         animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+     from {
+         opacity: 0;
+         -webkit-transform: translate3d(3000px, 0, 0);
+         transform: translate3d(3000px, 0, 0);
+    }
+     60% {
+         opacity: 1;
+         -webkit-transform: translate3d(-25px, 0, 0);
+         transform: translate3d(-25px, 0, 0);
+    }
+     75% {
+         -webkit-transform: translate3d(10px, 0, 0);
+         transform: translate3d(10px, 0, 0);
+    }
+     90% {
+         -webkit-transform: translate3d(-5px, 0, 0);
+         transform: translate3d(-5px, 0, 0);
+    }
+     to {
+         -webkit-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0);
+    }
+}
+ @-webkit-keyframes shake {
+     0%, 100% {
+         -webkit-transform: translateX(0);
+                 transform: translateX(0);
+    }
+     10%, 30%, 50%, 70%, 90% {
+         -webkit-transform: translateX(-10px);
+                 transform: translateX(-10px);
+    }
+     20%, 40%, 60%, 80% {
+         -webkit-transform: translateX(10px);
+                 transform: translateX(10px);
+    }
+}
+ @keyframes shake {
+     0%, 100% {
+         -webkit-transform: translateX(0);
+                 transform: translateX(0);
+    }
+     10%, 30%, 50%, 70%, 90% {
+         -webkit-transform: translateX(-10px);
+                 transform: translateX(-10px);
+    }
+     20%, 40%, 60%, 80% {
+         -webkit-transform: translateX(10px);
+                 transform: translateX(10px);
+    }
+}
+ .modal-error {
+     -webkit-animation-name: shake;
+             animation-name: shake;
+     -webkit-animation-duration: 0.6s;
+             animation-duration: 0.6s;
 }
