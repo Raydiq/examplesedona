@@ -303,7 +303,7 @@
      background-color: #eeeeee;
      width: 400px;
 }
- .features p, span{
+ .features p,.features span{
      color: #333333;
 }
  .features h3{
@@ -1056,10 +1056,10 @@
  .icon-down{
      margin-left: 10px;
 }
- .icon-down svg:hover path, .icon-up svg:hover path{
+ .icon-down:hover path, .icon-up:hover path{
      fill: #000;
 }
- .icon-down svg:active path, .icon-up svg:active path{
+ .icon-down:active path, .icon-up:active path{
      fill: #81b3d2;
 }
  .active-icon{
@@ -1244,10 +1244,10 @@
      left: 0;
      top: 0;
 }
- .button svg:hover path{
+ .button:hover path{
      fill: #81b3d2;
 }
- .button svg:active path{
+ .button:active path{
      fill: #bdbbbc;
 }
  .social{
