@@ -437,6 +437,7 @@
      cursor: pointer;
      padding-bottom: 6px;
      z-index: 3;
+     font-family: inherit;
 }
  .search-hotel:hover{
      background-color: #604e43;
@@ -473,6 +474,7 @@
      text-transform: uppercase;
      background-color: #81b3d2;
      cursor: pointer;
+     font-family: inherit;
 }
  .form-submit:hover{
      background-color: #669ec0;
@@ -726,6 +728,7 @@
      border: 2px solid #ffffff;
      border-radius: 2px;
      cursor: pointer;
+     font-family: inherit;
 }
  .btn-transparent:hover {
      color: #000000;
@@ -1309,6 +1312,9 @@
  .bounceInLeft {
      -webkit-animation-name: bounceInLeft;
      animation-name: bounceInLeft;
+}
+.button:focus svg {
+     outline: 1px dotted blue;
 }
  input::-ms-clear {
      display: none;
